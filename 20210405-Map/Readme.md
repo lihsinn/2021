@@ -12,6 +12,7 @@
 
 
 ## ⭐️畫面呈現
+**畫面載入時用fetch2得到`v2/Tourism/ScenicSpotAPI`的所有資料**
 ### 所有地區
  1. 寫一個func，撈出前30筆資料的資訊，並用appendChild的方式加進class為result的div裡面
  2. 每次拉動scrollbar會觸發onscroll的func，而當scrollbar拉到最底時，會再多產生30筆資料

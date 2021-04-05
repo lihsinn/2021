@@ -94,21 +94,15 @@
 
 
   //取得JSON資料
-  let XMLurl = "https://ptx.transportdata.tw/MOTC/v2/Tourism/ScenicSpot";
+  let url = "https://ptx.transportdata.tw/MOTC/v2/Tourism/ScenicSpot";
   const fetchData = async () => {
-    await fetch(XMLurl)
+    await fetch(url)
       .then(res => res.json())
       .then(result => {
         data = result;
         createAllMarker();
         createFilterAllResult();
       })
-      .catch(ex => {
-        //document.getElementById("attractions").innerText = ex;
-      })
-      .finally(() => {
-
-      });
     return true
   }
 
