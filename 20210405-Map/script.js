@@ -317,6 +317,7 @@
 
   //[動作]:選取地區
   document.querySelector(".button-select").addEventListener("click", function () {
+    //data-county-value
     let region = document.querySelector(".county").value;
     cleanMarker();
     createMarker(region);
